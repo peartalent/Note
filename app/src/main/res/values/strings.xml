@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Note</string>
+
+    <string name="role_read">Đọc</string>
+    <string name="role_write">Viết</string>
+    <string name="role_admin">Quản trị</string>
+</resources>
