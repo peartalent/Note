@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/safe"
+    app:startDestination="@+id/navigationHome">
+
+    <fragment
+        android:id="@+id/navigationHome"
+        android:name="com.dinhtai.note.ui.home.HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_noteEditFragment"
+            app:destination="@id/noteEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteEditFragment"
+        android:name="com.dinhtai.note.ui.noteedit.NoteEditFragment"
+        android:label="NoteEditFragment">
+        <argument
+            android:name="note"
+            app:argType="com.dinhtai.note.data.entity.NoteEdit" />
+    </fragment>
+</navigation>
